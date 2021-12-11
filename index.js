@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.login("ODQwOTUzMjMxNzAxMDQ5MzQ1.YJfsug.9L3ef91hPDXLjyX7YU8fzI-DIbc");
+bot.login(process.env.token);
 
 bot.once('ready', () => {
     console.log('Lode al Sole');
