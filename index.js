@@ -12,7 +12,7 @@ bot.once('ready', () => {
 function oraAttuale(){
     var hour = new Date().getHours();
     var minutes = new Date().getMinutes();
-    var canale = bot.channels.cache.get("819835955358990376")
+    var canale = bot.channels.cache.get("819835890347147274")
 
     var embed = new Discord.MessageEmbed()
         .setColor("#FFFF00")
@@ -31,7 +31,7 @@ setInterval(oraAttuale, 1000*60)
 function oraAttuale(){
     var hour = new Date().getHours();
     var minutes = new Date().getMinutes();
-    var canale = bot.channels.cache.get("819835955358990376")
+    var canale = bot.channels.cache.get("819835890347147274")
 
     var embed = new Discord.MessageEmbed()
         .setColor("#FFFF00")
