@@ -9,12 +9,12 @@ bot.once('ready', () => {
 
 });
 
-function oraAttuale(){
-    var hour = new Date().getHours();
-    var minutes = new Date().getMinutes();
-    var canale = bot.channels.cache.get("819835890347147274")
+function buongiorno(){
+    const hour = new Date().getHours();
+    const minutes = new Date().getMinutes();
+    const canale = bot.channels.cache.get("819835890347147274")
 
-    var embed = new Discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
         .setColor("#FFFF00")
         .setTitle("Lode al Sole")
         .setDescription("Buongiorno " + "<@&783621035295637514>")
@@ -26,14 +26,14 @@ function oraAttuale(){
         canale.send(embed)
     }
 }
-setInterval(oraAttuale, 1000*60)
+setInterval(buongiorno, 1000*60)
 
-function oraAttuale(){
-    var hour = new Date().getHours();
-    var minutes = new Date().getMinutes();
-    var canale = bot.channels.cache.get("819835890347147274")
+function buonanotte(){
+    const hour = new Date().getHours();
+    const minutes = new Date().getMinutes();
+    const canale = bot.channels.cache.get("819835890347147274")
 
-    var embed = new Discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
         .setColor("#FFFF00")
         .setTitle("Lode al Sole")
         .setDescription("Buonanotte " + "<@&783621035295637514>")
@@ -45,4 +45,4 @@ function oraAttuale(){
         canale.send(embed)
     }
 }
-setInterval(oraAttuale, 1000*60)
+setInterval(buonanotte, 1000*60)
