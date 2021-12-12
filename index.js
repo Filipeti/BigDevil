@@ -28,6 +28,25 @@ function buongiorno(){
 }
 setInterval(buongiorno, 1000*60)
 
+function buonpomeriggio(){
+    const hour = new Date().getHours();
+    const minutes = new Date().getMinutes();
+    const canale = bot.channels.cache.get("819835890347147274")
+
+    const embed = new Discord.MessageEmbed()
+        .setColor("#FFFF00")
+        .setTitle("Lode al Sole")
+        .setDescription("Buon pomeriggio " + "<@&783621035295637514>")
+        .setImage("https://c.tenor.com/4TVsfk4Dh5oAAAAi/good-night-yellow-stars-and-moon-around-good-night-in-blue-bubble-letters.gif")
+        .setFooter("BigDevil Bot")
+        .setTimestamp();
+
+    if(hour == 14 && minutes == 00){
+        canale.send(embed)
+    }
+}
+setInterval(buonpomeriggio, 1000*60)
+
 function buonanotte(){
     const hour = new Date().getHours();
     const minutes = new Date().getMinutes();
@@ -37,7 +56,7 @@ function buonanotte(){
         .setColor("#FFFF00")
         .setTitle("Lode al Sole")
         .setDescription("Buonanotte " + "<@&783621035295637514>")
-        .setImage("https://c.tenor.com/4TVsfk4Dh5oAAAAi/good-night-yellow-stars-and-moon-around-good-night-in-blue-bubble-letters.gif")
+        .setImage("https://c.tenor.com/aIK7scmY8i8AAAAd/sunset-good-morning.gif")
         .setFooter("BigDevil Bot")
         .setTimestamp();
 
